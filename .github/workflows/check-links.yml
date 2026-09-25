@@ -1,0 +1,32 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Restore Lychee Cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: ${{ runner.os }}-lychee-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-lychee-
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --cache --max-cache-age 1d --verbose --no-progress README.md CONTRIBUTING.md
+          fail: true

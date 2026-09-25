@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 38px; fill: #22252a; }
+      .sub-text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 16px; fill: #525866; }
+      .badge-text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 11px; fill: #525866; letter-spacing: 2px; }
+      .tag-text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 11px; fill: #22252a; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="400" fill="#F8F6EF"/>
+
+  <!-- Corner Decorator: Top-Left -->
+  <g transform="translate(30, 30)" stroke="#22252a" stroke-width="1.5" fill="none">
+    <!-- Honeycomb -->
+    <path d="M 0 10 L 8 5 L 16 10 L 16 20 L 8 25 L 0 20 Z" fill="none"/>
+    <path d="M 16 10 L 24 5 L 32 10 L 32 20 L 24 25 L 16 20 Z" fill="none"/>
+    <path d="M 8 25 L 16 20 L 24 25 L 24 35 L 16 40 L 8 35 Z" fill="none"/>
+    <!-- Lines -->
+    <line x1="45" y1="12" x2="100" y2="12"/>
+    <line x1="45" y1="20" x2="80" y2="20"/>
+  </g>
+
+  <!-- Corner Decorator: Top-Right -->
+  <g transform="translate(1070, 30)" stroke="#22252a" stroke-width="1.5" fill="none">
+    <!-- Lines -->
+    <line x1="0" y1="12" x2="55" y2="12"/>
+    <line x1="20" y1="20" x2="55" y2="20"/>
+    <!-- Honeycomb -->
+    <g transform="translate(65, 0)">
+      <path d="M 0 10 L 8 5 L 16 10 L 16 20 L 8 25 L 0 20 Z"/>
+      <path d="M 16 10 L 24 5 L 32 10 L 32 20 L 24 25 L 16 20 Z"/>
+      <path d="M 8 25 L 16 20 L 24 25 L 24 35 L 16 40 L 8 35 Z"/>
+    </g>
+  </g>
+
+  <!-- Corner Decorator: Bottom-Left -->
+  <g transform="translate(30, 355)" stroke="#22252a" fill="#22252a">
+    <circle cx="5" cy="5" r="3"/>
+    <circle cx="17" cy="5" r="3"/>
+    <circle cx="29" cy="5" r="3"/>
+    <line x1="40" y1="5" x2="110" y2="5" stroke-width="1.5"/>
+  </g>
+
+  <!-- Corner Decorator: Bottom-Right -->
+  <g transform="translate(1110, 350)" stroke="#22252a" stroke-width="1.5" fill="#22252a">
+    <line x1="0" y1="10" x2="2" y2="10"/>
+    <line x1="5" y1="6" x2="5" y2="14"/>
+    <line x1="8" y1="4" x2="8" y2="16"/>
+    <line x1="11" y1="7" x2="11" y2="13"/>
+    <line x1="14" y1="2" x2="14" y2="18"/>
+    <line x1="17" y1="5" x2="17" y2="15"/>
+    <line x1="20" y1="8" x2="20" y2="12"/>
+    <line x1="23" y1="4" x2="23" y2="16"/>
+    <circle cx="32" cy="10" r="2.5"/>
+  </g>
+
+  <!-- LEFT GRAPHIC: Atomic / Quantum Orbitals -->
+  <g transform="translate(135, 200)">
+    <!-- Orbit 1 -->
+    <ellipse cx="0" cy="0" rx="105" ry="40" transform="rotate(-30)" fill="none" stroke="#22252a" stroke-width="1.2"/>
+    <!-- Orbit 2 -->
+    <ellipse cx="0" cy="0" rx="105" ry="40" transform="rotate(30)" fill="none" stroke="#22252a" stroke-width="1.2"/>
+    <!-- Orbit 3 -->
+    <ellipse cx="0" cy="0" rx="105" ry="40" transform="rotate(90)" fill="none" stroke="#22252a" stroke-width="1.2"/>
+    <!-- Central Qubit Nucleus -->
+    <circle cx="0" cy="0" r="11" fill="#22252a"/>
+    <!-- Qubit / Electron Nodes on Orbitals -->
+    <circle cx="-75" cy="-38" r="5" fill="#22252a"/>
+    <circle cx="70" cy="40" r="5" fill="#22252a"/>
+    <circle cx="-35" cy="55" r="4" fill="#22252a"/>
+    <circle cx="82" cy="-20" r="4" fill="#22252a"/>
+    <circle cx="0" cy="-105" r="4" fill="#22252a"/>
+    <circle cx="5" cy="105" r="3" fill="#22252a"/>
+    <circle cx="-100" cy="12" r="3" fill="#22252a"/>
+  </g>
+
+  <!-- RIGHT GRAPHIC: AI Circuit Brain -->
+  <g transform="translate(1065, 200)">
+    <!-- Outer Orbit Ellipses -->
+    <ellipse cx="0" cy="0" rx="100" ry="50" transform="rotate(-15)" fill="none" stroke="#22252a" stroke-width="1.2" stroke-dasharray="140 10 30 10"/>
+    <ellipse cx="0" cy="0" rx="90" ry="70" transform="rotate(45)" fill="none" stroke="#22252a" stroke-width="1.2"/>
+    <!-- Nodes on Orbit -->
+    <circle cx="-85" cy="-20" r="4" fill="#22252a"/>
+    <circle cx="75" cy="45" r="4" fill="#22252a"/>
+    <circle cx="35" cy="-60" r="3" fill="#22252a"/>
+
+    <!-- Brain Outline & Circuit Traces -->
+    <g stroke="#22252a" stroke-width="1.5" fill="none">
+      <!-- Left Hemisphere -->
+      <path d="M -5 -42 C -22 -42 -38 -32 -42 -15 C -48 -12 -52 0 -48 12 C -52 24 -44 38 -30 42 C -20 45 -10 40 -5 34"/>
+      <!-- Right Hemisphere -->
+      <path d="M 5 -42 C 22 -42 38 -32 42 -15 C 48 -12 52 0 48 12 C 52 24 44 38 30 42 C 20 45 10 40 5 34"/>
+      <!-- Longitudinal Fissure -->
+      <line x1="0" y1="-40" x2="0" y2="35" stroke-dasharray="4 3"/>
+
+      <!-- Circuit Traces & Nodes inside Brain -->
+      <!-- Left Traces -->
+      <path d="M -15 -25 L -25 -25 L -32 -18"/>
+      <circle cx="-32" cy="-18" r="2.5" fill="#22252a"/>
+      <path d="M -15 -5 L -28 -5 L -35 3"/>
+      <circle cx="-35" cy="3" r="2.5" fill="#22252a"/>
+      <path d="M -15 18 L -25 18 L -30 25"/>
+      <circle cx="-30" cy="25" r="2.5" fill="#22252a"/>
+
+      <!-- Right Traces -->
+      <path d="M 15 -25 L 25 -25 L 32 -18"/>
+      <circle cx="32" cy="-18" r="2.5" fill="#22252a"/>
+      <path d="M 15 -5 L 28 -5 L 35 3"/>
+      <circle cx="35" cy="3" r="2.5" fill="#22252a"/>
+      <path d="M 15 18 L 25 18 L 30 25"/>
+      <circle cx="30" cy="25" r="2.5" fill="#22252a"/>
+    </g>
+
+    <!-- Central Microchip Rect with "AI" -->
+    <rect x="-18" y="-14" width="36" height="28" rx="4" fill="#F8F6EF" stroke="#22252a" stroke-width="1.8"/>
+    <!-- Chip pins -->
+    <line x1="-12" y1="-18" x2="-12" y2="-14" stroke="#22252a" stroke-width="1.5"/>
+    <line x1="0" y1="-18" x2="0" y2="-14" stroke="#22252a" stroke-width="1.5"/>
+    <line x1="12" y1="-18" x2="12" y2="-14" stroke="#22252a" stroke-width="1.5"/>
+    <line x1="-12" y1="14" x2="-12" y2="18" stroke="#22252a" stroke-width="1.5"/>
+    <line x1="0" y1="14" x2="0" y2="18" stroke="#22252a" stroke-width="1.5"/>
+    <line x1="12" y1="14" x2="12" y2="18" stroke="#22252a" stroke-width="1.5"/>
+    <text x="0" y="5" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#22252a" text-anchor="middle">AI</text>
+  </g>
+
+  <!-- CENTER CARD CONTAINER -->
+  <rect x="250" y="75" width="700" height="250" rx="20" fill="#F8F6EF" stroke="#22252a" stroke-width="2"/>
+
+  <!-- Top Capsule Pill: QUANTUM AI CURATED LIST -->
+  <g transform="translate(470, 102)">
+    <rect x="0" y="0" width="260" height="32" rx="16" fill="#F8F6EF" stroke="#22252a" stroke-width="1.5"/>
+    <text x="130" y="20" class="badge-text" text-anchor="middle">QUANTUM AI CURATED LIST</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="600" y="174" class="title-text" text-anchor="middle">Awesome Quantum Machine Learning</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="212" class="sub-text" text-anchor="middle">A curated collection of QML frameworks, algorithms, datasets &amp; landmark papers</text>
+
+  <!-- 4 Capsule Tags -->
+  <g transform="translate(600, 270)">
+    <!-- Tag 1: PENNYLANE -->
+    <g transform="translate(-215, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#F8F6EF" stroke="#22252a" stroke-width="1.5"/>
+      <text y="4" class="tag-text" text-anchor="middle">PENNYLANE</text>
+    </g>
+    <!-- Tag 2: QISKIT -->
+    <g transform="translate(-75, 0)">
+      <rect x="-45" y="-15" width="90" height="30" rx="15" fill="#F8F6EF" stroke="#22252a" stroke-width="1.5"/>
+      <text y="4" class="tag-text" text-anchor="middle">QISKIT</text>
+    </g>
+    <!-- Tag 3: TF QUANTUM -->
+    <g transform="translate(65, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#F8F6EF" stroke="#22252a" stroke-width="1.5"/>
+      <text y="4" class="tag-text" text-anchor="middle">TF QUANTUM</text>
+    </g>
+    <!-- Tag 4: CUQUANTUM -->
+    <g transform="translate(205, 0)">
+      <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#F8F6EF" stroke="#22252a" stroke-width="1.5"/>
+      <text y="4" class="tag-text" text-anchor="middle">CUQUANTUM</text>
+    </g>
+  </g>
+</svg>
