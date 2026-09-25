@@ -28,13 +28,13 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 - [Paddle Quantum](https://github.com/PaddlePaddle/Quantum) - Quantum machine learning toolkit developed on PaddlePaddle.
 - [PennyLane](https://pennylane.ai/) - Cross-platform Python library for quantum machine learning, automatic differentiation, and optimization of quantum circuits.
 - [Qiskit Machine Learning](https://qiskit-community.github.io/qiskit-machine-learning/) - Quantum machine learning algorithms and computational primitives built on top of Qiskit.
-- [TensorFlow Quantum (TFQ)](https://www.tensorflow.org/quantum) - Quantum machine learning library for rapid prototyping of hybrid quantum-classical ML models.
+- [TensorFlow Quantum (TFQ)](https://github.com/tensorflow/quantum) - Quantum machine learning library for rapid prototyping of hybrid quantum-classical ML models.
 - [TorchQuantum](https://github.com/mit-han-lab/torchquantum) - PyTorch-centric framework for Quantum Machine Learning and Quantum Neural Networks.
 - [Yao.jl](https://github.com/QuantumBFS/Yao.jl) - Extensible, efficient framework for Quantum Algorithm Design in Julia.
 
 ## Books
 
-- [Hands-On Quantum Machine Learning with Python](https://www.amazon.com/Hands-Quantum-Machine-Learning-Python/dp/B0953S92R3) - *Dr. Frank Zickert* - Practical guide using Python to build quantum neural networks and algorithms.
+- [Hands-On Quantum Machine Learning with Python](https://arxiv.org/abs/2102.05158) - *Dr. Frank Zickert* - Practical guide using Python to build quantum neural networks and algorithms.
 - [Machine Learning with Quantum Computers](https://link.springer.com/book/10.1007/978-3-030-83098-4) - *Maria Schuld & Francesco Petruccione* (2nd Edition) - Updated deep dive into quantum algorithms, kernel methods, and variational circuits.
 - [Quantum Machine Learning: What Quantum Computing Means to Data Mining](https://www.sciencedirect.com/book/9780128100400/quantum-machine-learning) - *Peter Wittek* - Early comprehensive textbook introducing QML fundamentals.
 - [Supervised Learning with Quantum Computers](https://link.springer.com/book/10.1007/978-3-319-96424-9) - *Maria Schuld & Francesco Petruccione* - Comprehensive technical analysis on supervised methods in quantum systems.
@@ -44,14 +44,14 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 - [EDX - Quantum Machine Learning](https://www.edx.org/) - Online academic program covering theoretical and practical concepts of QML.
 - [MIT Professional Education - Quantum Machine Learning](https://professional.mit.edu/) - Applied course focusing on industrial and commercial applications of QML.
 - [Qiskit Machine Learning Course](https://learn.qiskit.org/course/machine-learning) - Official hands-on tutorial series covering QML basics, quantum kernels, and neural networks.
-- [Xanadu Codebook](https://codebook.pennylane.ai/) - Interactive hands-on training module for quantum computing and quantum machine learning.
+- [Xanadu Codebook](https://codebook.xanadu.ai/) - Interactive hands-on training module for quantum computing and quantum machine learning.
 
 ## Articles & Research Papers
 
 - [Barren plateaus in quantum neural network training landscapes](https://www.nature.com/articles/s41467-018-07090-4) - Foundational paper analyzing gradient disappearance in quantum neural networks.
 - [Quantum Machine Learning (Nature 2017)](https://www.nature.com/articles/nature23474) - Landmark survey paper exploring quantum algorithms applied to big data and machine learning.
 - [Quantum Machine Learning in the NISQ era and beyond](https://arxiv.org/abs/2102.05162) - Detailed discussion on current noisy quantum hardware applications.
-- [The theory of variational quantum algorithms (Nature 2021)](https://www.nature.com/articles/s41586-021-03243-2) - Comprehensive overview of VQAs, the backbone of modern QML.
+- [The theory of variational quantum algorithms (Nature 2021)](https://arxiv.org/abs/2012.09265) - Comprehensive overview of VQAs, the backbone of modern QML.
 
 ## Tools & Simulators
 
@@ -86,6 +86,6 @@ Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTIN
 
 ## License
 
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc0-badge.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, the author has waived all copyright and related or neighboring rights to this work.

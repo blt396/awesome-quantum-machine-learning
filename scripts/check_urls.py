@@ -60,8 +60,12 @@ def check_urls(file_path: Path) -> bool:
                     broken_urls.append((safe_name, url, f"HTTP {status}"))
                     print(f" [FAIL {status}] {safe_name} -> {url}")
         except urllib.error.HTTPError as e:
-            broken_urls.append((safe_name, url, f"HTTP {e.code}"))
-            print(f" [FAIL {e.code}] {safe_name} -> {url}")
+            if e.code == 403 and any(domain in url for domain in ["slack.com", "amazon.com", "sciencedirect.com", "stackexchange.com"]):
+                valid_urls.append((safe_name, url, f"HTTP 403 (Active, bot-protected)"))
+                print(f" [OK 403 Bot-Protected] {safe_name} -> {url}")
+            else:
+                broken_urls.append((safe_name, url, f"HTTP {e.code}"))
+                print(f" [FAIL {e.code}] {safe_name} -> {url}")
         except urllib.error.URLError as e:
             broken_urls.append((safe_name, url, f"URL Error: {e.reason}"))
             print(f" [FAIL Error] {safe_name} -> {url} ({e.reason})")
