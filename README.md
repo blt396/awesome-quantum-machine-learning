@@ -64,7 +64,7 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 
 - [Amazon Braket](https://aws.amazon.com/braket/) - Fully managed quantum computing service from AWS to explore and build quantum algorithms.
 - [IBM Quantum Platform](https://quantum.ibm.com/) - Cloud access to real superconducting quantum processors and simulators.
-- [Microsoft Azure Quantum](https://azure.microsoft.com/en-us/products/quantum) - Cloud ecosystem giving access to diverse quantum hardware providers (IonQ, Rigetti, Quantinuum).
+- [Microsoft Azure Quantum](https://azure.microsoft.com/en-us/solutions/quantum-computing/) - Cloud ecosystem giving access to diverse quantum hardware providers (IonQ, Rigetti, Quantinuum).
 - [Xanadu Cloud](https://cloud.xanadu.ai/) - Access to photonic quantum computers optimized for PennyLane integration.
 
 ## Datasets

@@ -49,29 +49,38 @@ def check_urls(file_path: Path) -> bool:
 
     for name, url in matches:
         safe_name = name.encode("ascii", errors="replace").decode("ascii")
-        req = urllib.request.Request(url, headers=headers, method="GET")
-        try:
-            with urllib.request.urlopen(req, timeout=12, context=ctx) as response:
-                status = response.getcode()
-                if status < 400:
-                    valid_urls.append((safe_name, url, status))
-                    print(f" [OK {status}] {safe_name} -> {url}")
+        success = False
+        last_error = ""
+
+        # Try up to 2 times in case of transient network delays
+        for attempt in range(2):
+            req = urllib.request.Request(url, headers=headers, method="GET")
+            try:
+                with urllib.request.urlopen(req, timeout=25, context=ctx) as response:
+                    status = response.getcode()
+                    if status < 400:
+                        valid_urls.append((safe_name, url, status))
+                        print(f" [OK {status}] {safe_name} -> {url}", flush=True)
+                        success = True
+                        break
+                    else:
+                        last_error = f"HTTP {status}"
+            except urllib.error.HTTPError as e:
+                if e.code == 403 and any(domain in url for domain in ["slack.com", "amazon.com", "sciencedirect.com", "stackexchange.com"]):
+                    valid_urls.append((safe_name, url, f"HTTP 403 (Active, bot-protected)"))
+                    print(f" [OK 403 Bot-Protected] {safe_name} -> {url}", flush=True)
+                    success = True
+                    break
                 else:
-                    broken_urls.append((safe_name, url, f"HTTP {status}"))
-                    print(f" [FAIL {status}] {safe_name} -> {url}")
-        except urllib.error.HTTPError as e:
-            if e.code == 403 and any(domain in url for domain in ["slack.com", "amazon.com", "sciencedirect.com", "stackexchange.com"]):
-                valid_urls.append((safe_name, url, f"HTTP 403 (Active, bot-protected)"))
-                print(f" [OK 403 Bot-Protected] {safe_name} -> {url}")
-            else:
-                broken_urls.append((safe_name, url, f"HTTP {e.code}"))
-                print(f" [FAIL {e.code}] {safe_name} -> {url}")
-        except urllib.error.URLError as e:
-            broken_urls.append((safe_name, url, f"URL Error: {e.reason}"))
-            print(f" [FAIL Error] {safe_name} -> {url} ({e.reason})")
-        except Exception as e:
-            broken_urls.append((safe_name, url, f"Error: {str(e)}"))
-            print(f" [FAIL Exception] {safe_name} -> {url} ({e})")
+                    last_error = f"HTTP {e.code}"
+            except urllib.error.URLError as e:
+                last_error = f"URL Error: {e.reason}"
+            except Exception as e:
+                last_error = f"Error: {str(e)}"
+
+        if not success:
+            broken_urls.append((safe_name, url, last_error))
+            print(f" [FAIL] {safe_name} -> {url} ({last_error})", flush=True)
 
     print("\n" + "=" * 60)
     print(f"Total checked: {len(matches)} | Valid: {len(valid_urls)} | Broken: {len(broken_urls)}")
