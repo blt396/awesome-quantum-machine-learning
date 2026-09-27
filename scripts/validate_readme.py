@@ -14,18 +14,13 @@ EXPECTED_CATEGORIES = [
     "Books",
     "Courses",
     "Tutorials",
-    "Articles",
     "Research Papers",
     "Tools",
     "Simulators",
     "Platforms",
     "Cloud Providers",
     "Datasets",
-    "Videos",
-    "Channels",
-    "Podcasts",
     "Communities",
-    "Events",
 ]
 
 METADATA_SECTIONS = [

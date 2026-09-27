@@ -8,11 +8,6 @@
 
 Quantum Machine Learning merges quantum computing with classical machine learning techniques to process data and solve complex computational problems faster.
 
-> 🚀 **Getting Started with Quantum Machine Learning:**
-> - **New to QML?** Start with interactive, hands-on modules like [Xanadu Codebook](#tutorials) or the [Qiskit Machine Learning Course](#tutorials).
-> - **Foundational Theory:** Explore our curated list of academic [Courses](#courses) and theoretical [Books](#books).
-> - **Hands-On Development:** Jump straight into industry-standard [Frameworks](#frameworks) and [Libraries](#libraries).
-
 ---
 
 ## Contents
@@ -22,18 +17,13 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 - [Books](#books)
 - [Courses](#courses)
 - [Tutorials](#tutorials)
-- [Articles](#articles)
 - [Research Papers](#research-papers)
 - [Tools](#tools)
 - [Simulators](#simulators)
 - [Platforms](#platforms)
 - [Cloud Providers](#cloud-providers)
 - [Datasets](#datasets)
-- [Videos](#videos)
-- [Channels](#channels)
-- [Podcasts](#podcasts)
 - [Communities](#communities)
-- [Events](#events)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -70,29 +60,25 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 
 - [Coursera - Introduction to Quantum Information](https://www.coursera.org/learn/introduction-to-quantum-information) - Foundational academic course on quantum states, operations, and information processing principles.
 - [Coursera - Quantum Computing For Everyone](https://www.coursera.org/learn/quantum-computing-for-everyone-an-introduction) - Accessible introduction to quantum mechanics concepts, quantum circuits, and algorithmic building blocks.
-- [EDX - Quantum Machine Learning](https://www.edx.org/) - Online academic program covering theoretical and practical concepts of QML.
-- [MIT Professional Education - Quantum Machine Learning](https://professional.mit.edu/) - Applied course focusing on industrial and commercial applications of QML.
+- [Qiskit Global Summer School - QML Playlist](https://www.youtube.com/playlist?list=PLOFEBzvs-VvqJwybFxkWi5grWb24U7liE) - Comprehensive lecture video series and lab walkthroughs dedicated to quantum machine learning.
 - [Stanford Online - Quantum Mechanics for Scientists and Engineers](https://online.stanford.edu/courses/soe-yqe0001-quantum-mechanics-scientists-and-engineers) - In-depth graduate-level course providing mathematical foundations for quantum technologies.
 
 ## Tutorials
 
-- [PennyLane QML Demos](https://pennylane.ai/qml/demos/) - Extensive collection of curated, community-driven demonstrations and tutorials on quantum machine learning algorithms.
+- [PennyLane QML Demos](https://pennylane.ai/demonstrations) - Extensive collection of curated, community-driven demonstrations and tutorials on quantum machine learning algorithms.
 - [Qiskit Machine Learning Course](https://learn.qiskit.org/course/machine-learning) - Official hands-on tutorial series covering QML basics, quantum kernels, and neural networks.
-- [Xanadu Codebook](https://codebook.xanadu.ai/) - Interactive hands-on training module for quantum computing and quantum machine learning.
-
-## Articles
-
-- [Classification with Quantum Neural Networks on Near Term Processors (2018)](https://arxiv.org/abs/1802.06002) - Edward Farhi and Hartmut Neven's pioneering work proposing quantum neural network architectures for classification.
-- [Quantum Machine Learning in the NISQ era and beyond](https://arxiv.org/abs/2102.05162) - Detailed discussion on current noisy quantum hardware applications.
+- [Xanadu Codebook](https://pennylane.ai/codebook) - Interactive hands-on training module for quantum computing and quantum machine learning.
 
 ## Research Papers
 
 - [Barren plateaus in quantum neural network training landscapes](https://www.nature.com/articles/s41467-018-07090-4) - Foundational paper analyzing gradient disappearance in quantum neural networks.
+- [Classification with Quantum Neural Networks on Near Term Processors (2018)](https://arxiv.org/abs/1802.06002) - Edward Farhi and Hartmut Neven's pioneering work proposing quantum neural network architectures for classification.
 - [Power of data in quantum machine learning (Nat. Commun. 2021)](https://arxiv.org/abs/2011.01938) - Hsin-Yuan Huang et al.'s rigorous study examining the advantages and computational boundaries of quantum machine learning.
 - [Quantum generative adversarial networks (PRA 2018)](https://arxiv.org/abs/1804.08641) - Pierre-Luc Dallaire-Demers and Nathan Killoran's framework introducing QGANs for continuous-variable and discrete systems.
 - [Quantum Generative Adversarial Networks (PRL 2018)](https://arxiv.org/abs/1804.09139) - Seth Lloyd and Christian Weedbrook's seminal paper demonstrating exponential quantum advantage in generator-discriminator games.
 - [Quantum Machine Learning (Nature 2017)](https://www.nature.com/articles/nature23474) - Landmark survey paper exploring quantum algorithms applied to big data and machine learning.
 - [Quantum Machine Learning in Feature Hilbert Spaces (PRL 2019)](https://arxiv.org/abs/1803.07128) - Maria Schuld and Nathan Killoran's landmark paper connecting quantum circuits to kernel methods in reproducing kernel Hilbert spaces.
+- [Quantum Machine Learning in the NISQ era and beyond](https://arxiv.org/abs/2102.05162) - Detailed discussion on current noisy quantum hardware applications.
 - [Quantum principal component analysis (Nature Physics 2014)](https://arxiv.org/abs/1307.0401) - Seth Lloyd, Masoud Mohseni, and Patrick Rebentrost's milestone algorithm providing exponential speedup for PCA.
 - [Quantum Support Vector Machine for Big Data Classification (PRL 2014)](https://arxiv.org/abs/1307.0471) - Patrick Rebentrost, Masoud Mohseni, and Seth Lloyd's foundational paper introducing the quantum SVM algorithm.
 - [Supervised learning with quantum-enhanced feature spaces (Nature 2019)](https://arxiv.org/abs/1804.11326) - Vojtěch Havlíček et al.'s milestone paper implementing quantum kernels on superconducting quantum hardware.
@@ -114,7 +100,7 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 
 ## Platforms
 
-- [IBM Quantum Platform](https://quantum.ibm.com/) - Cloud access to real superconducting quantum processors and simulators.
+- [IBM Quantum Platform](https://quantum.cloud.ibm.com/) - Cloud access to real superconducting quantum processors and simulators.
 - [Quantinuum](https://www.quantinuum.com/) - Integrated quantum computing platform combining trapped-ion hardware and software solutions.
 - [Xanadu Cloud](https://cloud.xanadu.ai/) - Access to photonic quantum computers optimized for PennyLane integration.
 
@@ -129,30 +115,14 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 - [PennyLane Datasets](https://pennylane.ai/datasets) - Pre-calculated quantum datasets including spin systems, molecular geometries, and quantum circuits.
 - [Quantum Chemistry Literature Data (QMCData)](https://github.com/quantum-machine-learning) - Public quantum chemistry benchmark datasets formatted for QML training.
 
-## Videos
-
-- [Qiskit Global Summer School - QML Playlist](https://www.youtube.com/playlist?list=PLOFEBzvs-VvqJwybFxkWi5grWb24U7liE) - Comprehensive lecture video series and lab walkthroughs dedicated to quantum machine learning.
-
-## Channels
-
-- [Qiskit YouTube Channel](https://www.youtube.com/@qiskit) - Official IBM Quantum YouTube channel featuring tutorials, seminar series, and quantum coding challenges.
-- [Xanadu YouTube Channel](https://www.youtube.com/@XanaduAI) - Video guides, research talks, and community coding sessions centered on PennyLane and photonic quantum computing.
-
-## Podcasts
-
-- [Quantum Computing Now Podcast](https://quantumcomputingnow.com/) - Weekly podcast exploring current breakthroughs, quantum concepts, and interviews in quantum computing.
-- [Quantum Tech Pod](https://www.insidequantumtechnology.com/) - Deep-dive discussions and interviews on the commercialization and technical progress of quantum technologies.
-
 ## Communities
 
 - [PennyLane Discussion Forum](https://discuss.pennylane.ai/) - Community hub for QML researchers, engineers, and open-source contributors.
 - [Qiskit Slack Community](https://qiskit.slack.com/) - Active chat platform for quantum software developers and QML enthusiasts.
+- [Qiskit YouTube Channel](https://www.youtube.com/@qiskit) - Official IBM Quantum YouTube channel featuring tutorials, seminar series, and quantum coding challenges.
 - [Quantum Computing Stack Exchange](https://quantumcomputing.stackexchange.com/) - Question and answer site for researchers and practitioners.
 - [QWorld Community](https://qworld.net/) - Non-profit global network connecting quantum computing enthusiasts, researchers, and students.
-
-## Events
-
-- [QWorld Workshops](https://qworld.net/workshops/) - Global non-profit educational workshops and open training materials on quantum computing and quantum algorithms.
+- [Xanadu YouTube Channel](https://www.youtube.com/@XanaduAI) - Video guides, research talks, and community coding sessions centered on PennyLane and photonic quantum computing.
 
 ---
 

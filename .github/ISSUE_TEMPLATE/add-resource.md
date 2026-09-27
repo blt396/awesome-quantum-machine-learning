@@ -16,18 +16,13 @@ assignees: ""
   - [ ] Books
   - [ ] Courses
   - [ ] Tutorials
-  - [ ] Articles
   - [ ] Research Papers
   - [ ] Tools
   - [ ] Simulators
   - [ ] Platforms
   - [ ] Cloud Providers
   - [ ] Datasets
-  - [ ] Videos
-  - [ ] Channels
-  - [ ] Podcasts
   - [ ] Communities
-  - [ ] Events
 - **Proposed Description** (1 sentence ending with a period):
 
 ### Reason for Addition
