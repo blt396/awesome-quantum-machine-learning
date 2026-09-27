@@ -6,7 +6,7 @@ Please take a moment to review these guidelines before submitting a pull request
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please report any unacceptable behavior to the project maintainer (`qml-maintainer`) at `qml-maintainer@users.noreply.github.com`.
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please report any unacceptable behavior to the project maintainer (@blt396) at `qml-maintainer@users.noreply.github.com`.
 
 ## Guidelines for Contributing
 

@@ -57,7 +57,7 @@ representative at an online or offline event.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the project maintainer (`qml-maintainer`) at `qml-maintainer@users.noreply.github.com`.
+reported to the project maintainer (@blt396) at `qml-maintainer@users.noreply.github.com`.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

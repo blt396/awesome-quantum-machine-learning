@@ -1,8 +1,10 @@
-![Awesome QML Banner](assets/banner.png)
+<p align="center">
+  <img src="assets/banner.png" alt="Awesome Quantum Machine Learning Banner" width="100%">
+</p>
 
 # Awesome Quantum Machine Learning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of awesome Quantum Machine Learning (QML) frameworks, libraries, landmark research papers, courses, books, tools, and platforms.
+> A curated collection of QML frameworks, research, and tools.
 
 Quantum Machine Learning merges quantum computing with classical machine learning techniques to process data and solve complex computational problems faster.
 

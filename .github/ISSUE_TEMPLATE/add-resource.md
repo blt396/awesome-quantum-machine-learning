@@ -11,14 +11,23 @@ assignees: ""
 - **Resource Title**: 
 - **URL**: 
 - **Target Category**: 
-  - [ ] Frameworks & Libraries
+  - [ ] Frameworks
+  - [ ] Libraries
   - [ ] Books
-  - [ ] Courses & Tutorials
-  - [ ] Articles & Research Papers
-  - [ ] Tools & Simulators
-  - [ ] Platforms & Cloud Providers
+  - [ ] Courses
+  - [ ] Tutorials
+  - [ ] Articles
+  - [ ] Research Papers
+  - [ ] Tools
+  - [ ] Simulators
+  - [ ] Platforms
+  - [ ] Cloud Providers
   - [ ] Datasets
-  - [ ] Community & Events
+  - [ ] Videos
+  - [ ] Channels
+  - [ ] Podcasts
+  - [ ] Communities
+  - [ ] Events
 - **Proposed Description** (1 sentence ending with a period):
 
 ### Reason for Addition
