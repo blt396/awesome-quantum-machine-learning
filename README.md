@@ -8,6 +8,11 @@
 
 Quantum Machine Learning merges quantum computing with classical machine learning techniques to process data and solve complex computational problems faster.
 
+> 🚀 **Getting Started with Quantum Machine Learning:**
+> - **New to QML?** Start with interactive, hands-on modules like [Xanadu Codebook](#tutorials) or the [Qiskit Machine Learning Course](#tutorials).
+> - **Foundational Theory:** Explore our curated list of academic [Courses](#courses) and theoretical [Books](#books).
+> - **Hands-On Development:** Jump straight into industry-standard [Frameworks](#frameworks) and [Libraries](#libraries).
+
 ---
 
 ## Contents
