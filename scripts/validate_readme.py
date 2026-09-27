@@ -1,12 +1,38 @@
 #!/usr/bin/env python3
 """
 README.md Linter and Validator for Awesome Quantum Machine Learning.
-Verifies entry formatting, alphabetical ordering, and sentence punctuation.
+Verifies section structure, entry formatting, alphabetical ordering, and sentence punctuation.
 """
 
 import re
 import sys
 from pathlib import Path
+
+EXPECTED_CATEGORIES = [
+    "Frameworks",
+    "Libraries",
+    "Books",
+    "Courses",
+    "Tutorials",
+    "Articles",
+    "Research Papers",
+    "Tools",
+    "Simulators",
+    "Platforms",
+    "Cloud Providers",
+    "Datasets",
+    "Videos",
+    "Channels",
+    "Podcasts",
+    "Communities",
+    "Events",
+]
+
+METADATA_SECTIONS = [
+    "Contents",
+    "Contributing",
+    "License",
+]
 
 
 def validate_readme(file_path: Path) -> bool:
@@ -19,6 +45,7 @@ def validate_readme(file_path: Path) -> bool:
 
     errors = []
     current_category = None
+    found_categories = []
     category_items = {}
 
     # Regular expression for matching standard entry format:
@@ -31,8 +58,13 @@ def validate_readme(file_path: Path) -> bool:
         if stripped.startswith("## "):
             category_title = stripped[3:].strip()
             # Ignore standard non-resource metadata sections
-            if category_title not in ["Contents", "Contributing", "Code of Conduct", "License"]:
+            if category_title not in METADATA_SECTIONS:
+                if category_title not in EXPECTED_CATEGORIES:
+                    errors.append(
+                        f"Line {line_num}: Unexpected category '{category_title}'. Expected one of {EXPECTED_CATEGORIES}."
+                    )
                 current_category = category_title
+                found_categories.append(current_category)
                 category_items[current_category] = []
             else:
                 current_category = None
@@ -65,6 +97,11 @@ def validate_readme(file_path: Path) -> bool:
                 )
 
             category_items[current_category].append((name, line_num))
+
+    # Verify that all expected categories are present
+    missing_categories = [cat for cat in EXPECTED_CATEGORIES if cat not in found_categories]
+    if missing_categories:
+        errors.append(f"Missing expected categories: {missing_categories}")
 
     # Check alphabetical ordering within each category
     for category, items in category_items.items():
