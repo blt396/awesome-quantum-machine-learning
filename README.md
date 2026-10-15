@@ -61,7 +61,7 @@ Quantum Machine Learning merges quantum computing with classical machine learnin
 - [Coursera - Introduction to Quantum Information](https://www.coursera.org/learn/introduction-to-quantum-information) - Foundational academic course on quantum states, operations, and information processing principles.
 - [Coursera - Quantum Computing For Everyone](https://www.coursera.org/learn/quantum-computing-for-everyone-an-introduction) - Accessible introduction to quantum mechanics concepts, quantum circuits, and algorithmic building blocks.
 - [Qiskit Global Summer School - QML Playlist](https://www.youtube.com/playlist?list=PLOFEBzvs-VvqJwybFxkWi5grWb24U7liE) - Comprehensive lecture video series and lab walkthroughs dedicated to quantum machine learning.
-- [Stanford Online - Quantum Mechanics for Scientists and Engineers](https://online.stanford.edu/courses/soe-yqe0001-quantum-mechanics-scientists-and-engineers) - In-depth graduate-level course providing mathematical foundations for quantum technologies.
+- [Calder Brief — Quantum error correction explainer](https://calder-brief.pages.dev/quantum-error-correction-explained) - Quantum error correction in plain English: the mathematical foundations of fault-tolerant quantum computing.
 
 ## Tutorials
 
